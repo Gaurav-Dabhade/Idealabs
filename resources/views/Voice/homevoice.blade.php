@@ -691,8 +691,11 @@ Founder of idealabs (At bottom of image)
          headers: {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')},
          success:function(data){
             $('#name').html(data.title);
-             $('#content').html('<video width="500" height="400" controls autoplay><source src="/Videos/""'+data.video+'" type="video/mp4"></video>');
+            var videoFile = '/Videos/'+data.video;
 
+            $('#content video source').attr('src', videoFile);
+
+            $('#content video').get(0).load();
 
          }
       });
