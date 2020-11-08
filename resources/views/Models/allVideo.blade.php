@@ -6,7 +6,7 @@
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
             </div>
             <div class="modal-body" id="content">
-
+                <video controls autoplay><source src="" type="video/mp4"></video>
             </div>
         </div>
         <!-- /.modal-content -->
