@@ -1,0 +1,65 @@
+.fun-fact-area {
+    padding: 80px 0 75px;
+    position: relative;
+    font-size: .9375rem;
+    font-family: Montserrat,sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+
+}
+
+.sm-top {
+    margin-top: 110px;
+
+}
+
+.parallax {
+
+        background: black;
+
+}
+@media only screen and (max-width: 767.98px){
+.sm-top {
+    margin-top: 60px;
+}}
+.container1 {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row1{
+	  display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.mtn-40 {
+    margin-top: -40px;
+}
+.text-center {
+    text-align: center!important;
+}
+
+
+
+@media only screen and (max-width: 767.98px) {
+
+.counter-item {
+    margin-top: 40px;
+}
+
+
+}
+
+
+.contact{
+    text-align: center;
+    font-size: 30px;
+    font-family: "Campton Light", sans-serif;
+    padding-top: 10px;
+}
