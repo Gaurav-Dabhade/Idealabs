@@ -22,6 +22,9 @@
     <!-- =========================
        favicon and app touch icon
     ============================== -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/loader-5.css">
+    <script src="/js/custom.js"></script>
     <link rel="shortcut icon" href="favicon.ico"/>
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
@@ -36,6 +39,7 @@
        Fonts, typography and icons
     ============================== -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+
     <link rel="stylesheet" href="/css/font-awesome.css">
     <link rel="stylesheet" href="/css/typography.css">
 
@@ -54,19 +58,24 @@
     <!-- ***** Responsive fixes ***** -->
     <link rel="stylesheet" href="/css/responsive.css">
     <link rel="stylesheet" type="text/css" href="/css/style.css">
+
     <!-- Header scripts -->
     <script src="/js/vendor/modernizr-2.8.3.min.js"></script>
-    <script src="/js/queryloader2.min.js"></script>
+
 
     <!-- =========================
        Preloader
     ============================== -->
 
+
     <style>
   .imge {
    width: 182px !important;
 }
+
+
     </style>
+
 </head>
 <body>
     <!--[if lt IE 8]>
@@ -76,6 +85,7 @@
     <!-- =========================
        Fullscreen menu
     ============================== -->
+    <div class="loader"></div>
     <div class="mobilenav">
         <ul>
 

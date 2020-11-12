@@ -22,6 +22,9 @@
     <!-- =========================
        favicon and app touch icon
     ============================== -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/loader-5.css">
+    <script src="/js/custom.js"></script>
     <link rel="shortcut icon" href="favicon.ico"/>
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
@@ -56,7 +59,7 @@
     <link rel="stylesheet" type="text/css" href="/css/style.css">
     <!-- Header scripts -->
     <script src="/js/vendor/modernizr-2.8.3.min.js"></script>
-    <script src="/js/queryloader2.min.js"></script>
+
 
     <!-- =========================
        Preloader
@@ -76,6 +79,7 @@
     <!-- =========================
        Fullscreen menu
     ============================== -->
+    <div class="loader"></div>
     <div class="mobilenav">
         <ul>
 
