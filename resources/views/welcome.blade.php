@@ -386,7 +386,7 @@ Founder of idealabs (At bottom of image)
             <div class="filters">
                 <ul class="wow lightSpeedIn">
                     <li><a href="/" class="active">All</a></li>
-                    <li><a href="/all_twod">2D Animation</a></li>
+                    <li><a href="/all_twod" data-rel="#portfolio">2D Animation</a></li>
                     <li><a href="/all_threed">3D Animation</a></li>
                     <li><a href="/all_vfx">VFX</a></li>
                     <li><a href="/all_walk">Architecture Walkthrough</a></li>
@@ -617,25 +617,26 @@ Founder of idealabs (At bottom of image)
                     <div class="modal-body">
 
                         <!-- *****  Contact form ***** -->
-                        <form class="form">
+                        <form class="form" method="POST" action="/enquiryForm" id="myForm">
+                            @csrf
                             <div class="row">
                                 <div class="form-group col-md-6">
-                                    <input type="text" class="form-control" id="first-name" placeholder="First name">
+                                    <input type="text" class="form-control" id="first-name" placeholder="First name" name="fname">
                                 </div>
                                 <div class="form-group col-md-6">
-                                    <input type="text" class="form-control" id="last-name" placeholder="Last name">
+                                    <input type="text" class="form-control" id="last-name" placeholder="Last name" name="lname">
                                 </div>
                                 <div class="form-group col-md-6">
-                                    <input type="email" class="form-control" id="email" placeholder="Email address">
+                                    <input type="email" class="form-control" id="email" placeholder="Email address" name="email">
                                 </div>
                                 <div class="form-group col-md-6">
-                                    <input type="text" class="form-control" id="project-name" placeholder="Project name">
+                                    <input type="text" class="form-control" id="project-name" placeholder="Project name" name="pname">
                                 </div>
                                 <div class="form-group col-md-12 mab-none">
-                                    <textarea rows="6" class="form-control" id="description" placeholder="Your project details and description ..."></textarea>
+                                    <textarea rows="6" class="form-control" id="description" placeholder="Your project details and description ..." name="description"></textarea>
                                 </div>
                                 <div class="form-group col-md-12">
-                                    <div class="button bold-text main-bg"><i class="fa fa-paper-plane"></i></div>
+                                    <div class="button bold-text main-bg" onclick="submitOnClick('myForm')"><i class="fa fa-paper-plane"></i></div>
                                 </div>
                             </div>
                         </form>
@@ -712,6 +713,11 @@ Founder of idealabs (At bottom of image)
          }
       });
                 });
+    </script>
+    <script>
+        function submitOnClick(formName){
+            document.forms[formName].submit();
+        }
     </script>
 </body>
 </html>

@@ -2,16 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\Sendtome;
 use Illuminate\Http\Request;
 use App\Models\Gif;
 use App\Models\Video;
-use App\Models\Twod;
-use App\Models\Threed;
-use App\Models\Vfx;
-use App\Models\Walk;
-use App\Models\Brand;
-use App\Models\Voice;
-use App\Models\Web;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\DB;
 
 class HomeController extends Controller
@@ -104,4 +99,16 @@ class HomeController extends Controller
         return view('Voice.homevoice',['gifs'=>$gifs,'voices'=>$voices]);
         // return view('welcome',['gifs'=>$gifs,'twods'=>$twods,'threeds'=>$threeds,'vfxs'=>$vfxs,'walks'=>$walks,'brands'=>$brands,'webs'=>$webs,'voices'=>$voices]);
     }
+
+//     public function enquiry(Request $request){
+//         $email="gauravdabhade20@gmail.com";
+
+//         Mail::to($email)->send(new Sendtome($request->fname,$request->lname,$request->email,$request->pname,$request->description));
+
+// return view('welcome');
+//     }
+
+
+
+
 }

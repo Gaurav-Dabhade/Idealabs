@@ -147,3 +147,5 @@ Route::post('/video_voice/{id}',[VideoController::class,'get_voicevideo']);
 Route::post('/video_walk/{id}',[VideoController::class,'get_walkvideo']);
 Route::post('/video_web/{id}',[VideoController::class,'get_webvideo']);
 //End video model routes
+
+
