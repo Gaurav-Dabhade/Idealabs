@@ -1,3 +1,2 @@
 # Idealabs
-This idealabs project is a project using Laravel Jetstream framework. This project is for 
-showing innovative ideas like animation,2d and 3d videos, web development projects to the user. 
+This idealabs project is a project using Laravel Jetstream framework. This project is web application which shows designers work/ideas to the user. Designer can upload his videos/photos/vfx/animation work on this application through the dashboard.
