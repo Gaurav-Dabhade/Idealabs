@@ -1,1 +1,38 @@
-# Idealabs Project Idealabs is a web application built using the **Laravel Jetstream** framework. It is designed to showcase the work and ideas of designers (clients) to users. Designers can upload their creative works such as videos, photos, VFX, animations, and other media content through the user-friendly dashboard. Users can view these works on the main page, allowing them to explore various creative projects. The application also includes a login, registration system, and a **forgot password** feature for account management. ## Features - **User Dashboard**: Designers can upload and manage their creative works such as videos, photos, VFX, animations, etc. - **Main Page**: A public-facing page where users can view the work/ideas uploaded by designers. - **Authentication**:   - **Login & Registration**: User authentication using Laravel Jetstream.   - **Forgot Password**: Users can reset their passwords if forgotten. - **File Uploads**: Designers can easily upload multimedia files (videos, images, animations, etc.) via the dashboard. ## Tech Stack - **Backend**: Laravel 8 (using Laravel Jetstream for authentication) - **Frontend**: Blade (or optionally Vue.js or Livewire based on your Laravel Jetstream setup) - **Database**: MySQL - **Authentication**: Laravel Jetstream (includes features like registration, login, and password recovery) ## Installation ### Prerequisites Make sure you have the following installed: - **PHP** (version 7.3 or higher) - **Composer** - **Node.js** (for frontend asset compilation) - **MySQL** (or any compatible database) - **Laravel** (set up via Composer) ### Setup 1. Clone the repository: ```bash git clone https://github.com/yourusername/idealabs.git ``` 2. Navigate to the project directory: ```bash cd idealabs ``` 3. Install PHP dependencies using Composer: ```bash composer install ``` 4. Copy the `.env.example` file to `.env`: ```bash cp .env.example .env ``` 5. Generate the application key: ```bash php artisan key:generate ``` 6. Set up your database by configuring the `.env` file with your database credentials: ```ini DB_CONNECTION=mysql DB_HOST=127.0.0.1 DB_PORT=3306 DB_DATABASE=idealabs DB_USERNAME=root DB_PASSWORD= ``` 7. Run database migrations to set up the database schema: ```bash php artisan migrate ``` 8. Install frontend dependencies (if any): ```bash npm install ``` 9. Compile assets (if you're using Laravel Mix or another asset bundler): ```bash npm run dev ``` 10. Run the application locally: ```bash php artisan serve ``` Your application should now be running at `http://localhost:8000`. ## Usage 1. Navigate to the login or registration page and create a new account or log in. 2. Designers can log in and access their dashboard to upload videos, photos, and other media. 3. Users can visit the main page to view the designers' works and explore creative ideas. ## File Upload Instructions Designers can upload files (videos, images, animations, etc.) directly via their dashboard. The uploaded media will be displayed on the main page for public viewing. - Supported file types: Videos (MP4, MOV), Images (JPG, PNG), Animations (GIF, WebM, etc.) - Ensure that the file size does not exceed the defined limits in the application (configured in `.env`). ## Testing To run tests, use the following Artisan command: ```bash php artisan test ``` ## License This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details. --- ### Additional Information - **Laravel Jetstream** provides a robust and secure authentication system that includes login, registration, and password recovery features. - The **designer dashboard** allows users to easily manage their uploaded works, making the process seamless and efficient for content creators. - The application is built with scalability and flexibility in mind, allowing future integrations or modifications to improve the user and designer experience.
+# Idealabs Project
+
+**Idealabs** is a web application built using the **Laravel Jetstream** framework. It is designed to showcase the work and ideas of designers (clients) to users. Designers can upload their creative works such as videos, photos, VFX, animations, and other media content through the user-friendly dashboard. Users can view these works on the main page, allowing them to explore various creative projects. The application also includes a login, registration system, and a **forgot password** feature for account management.
+
+---
+
+## ✨ Features
+
+- **User Dashboard**: Designers can upload and manage their creative works such as videos, photos, VFX, animations, etc.
+- **Main Page**: A public-facing page where users can view the work/ideas uploaded by designers.
+- **Authentication**:  
+  - **Login & Registration**: User authentication using Laravel Jetstream.
+  - **Forgot Password**: Users can reset their passwords if forgotten.
+- **File Uploads**: Designers can easily upload multimedia files (videos, images, animations, etc.) via the dashboard.
+
+---
+
+## 🛠 Tech Stack
+
+- **Backend**: Laravel 8
+- **Frontend**: Blade ( Laravel Jetstream setup)
+- **Database**: MySQL
+- **Authentication**: Laravel Jetstream (includes features like registration, login, and password recovery)
+
+---
+
+## 🚀 Installation
+
+### Prerequisites
+
+Make sure you have the following installed:
+
+- **PHP** (version 7.3 or higher)
+- **Composer**
+- **Node.js** (for frontend asset compilation)
+- **MySQL** (or any compatible database)
+- **Laravel** (set up via Composer)
+
